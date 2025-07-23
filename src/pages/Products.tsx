@@ -10,25 +10,25 @@ const Products = () => {
       id: 1,
       name: { al: 'Kukulla Rozë', en: 'Pink Doll', de: 'Rosa Puppe' },
       price: '25€',
-      image: '/lovable-uploads/f0cb75a0-9710-483a-9c4e-31efea7a5c32.png'
+      image: '/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png'
     },
     {
       id: 2,
       name: { al: 'Kukulla Jeshile', en: 'Green Doll', de: 'Grüne Puppe' },
       price: '25€',
-      image: '/lovable-uploads/f0cb75a0-9710-483a-9c4e-31efea7a5c32.png'
+      image: '/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png'
     },
     {
       id: 3,
       name: { al: 'Kukulla Krem', en: 'Cream Doll', de: 'Creme Puppe' },
       price: '25€',
-      image: '/lovable-uploads/f0cb75a0-9710-483a-9c4e-31efea7a5c32.png'
+      image: '/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png'
     },
     {
       id: 4,
       name: { al: 'Kukulla Blu', en: 'Blue Doll', de: 'Blaue Puppe' },
       price: '25€',
-      image: '/lovable-uploads/f0cb75a0-9710-483a-9c4e-31efea7a5c32.png'
+      image: '/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png'
     }
   ];
 

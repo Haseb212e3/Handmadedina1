@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import handmadeDolls from '@/assets/handmade-dolls.jpg';
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -49,7 +48,7 @@ const HeroSection = () => {
           {/* Dolls image */}
           <div className="relative">
             <img
-              src={handmadeDolls}
+              src="/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png"
               alt="Handmade Faceless Dolls"
               className="w-80 md:w-96 lg:w-[28rem] h-auto object-contain mx-auto drop-shadow-2xl"
             />
