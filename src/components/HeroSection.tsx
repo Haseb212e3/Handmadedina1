@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 const HeroSection = () => {
   const navigate = useNavigate();
   const [currentLang, setCurrentLang] = useState('al');
-
   const content = {
     al: {
       title: 'KUKULLA PA FYTYRË',
@@ -19,13 +17,10 @@ const HeroSection = () => {
       button: 'JETZT KAUFEN'
     }
   };
-
   const handleBuyNow = () => {
     navigate('/products');
   };
-
-  return (
-    <section className="cosmic-bg min-h-screen flex flex-col items-center justify-center relative px-4">
+  return <section className="cosmic-bg min-h-screen flex flex-col items-center justify-center relative px-4">
       {/* Aurora background effects */}
       <div className="aurora-lines"></div>
       
@@ -47,11 +42,7 @@ const HeroSection = () => {
           
           {/* Dolls image */}
           <div className="relative">
-            <img
-              src="/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png"
-              alt="Handmade Faceless Dolls"
-              className="w-80 md:w-96 lg:w-[28rem] h-auto object-contain mx-auto drop-shadow-2xl"
-            />
+            <img src="/lovable-uploads/ccfc0268-3b7a-4c55-b63f-fb0914a7ef7e.png" alt="Handmade Faceless Dolls" className="w-80 md:w-96 lg:w-[28rem] h-auto object-contain mx-auto drop-shadow-2xl" />
             
             {/* Additional glow effect on dolls */}
             <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-lg"></div>
@@ -59,21 +50,22 @@ const HeroSection = () => {
         </div>
 
         {/* Buy Now Button */}
-        <button
-          onClick={handleBuyNow}
-          className="btn-buy px-8 md:px-12 py-4 md:py-5 rounded-lg text-lg md:text-xl font-bold transition-all duration-300 hover:scale-105 active:scale-95"
-        >
+        <button onClick={handleBuyNow} className="btn-buy px-8 md:px-12 py-4 md:py-5 rounded-lg text-lg md:text-xl font-bold transition-all duration-300 hover:scale-105 active:scale-95">
           {content[currentLang as keyof typeof content].button}
         </button>
       </div>
 
       {/* Additional cosmic effects */}
       <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-      <div className="absolute top-40 right-20 w-1 h-1 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-32 left-20 w-1.5 h-1.5 bg-primary rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-20 right-10 w-1 h-1 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-    </section>
-  );
+      <div className="absolute top-40 right-20 w-1 h-1 bg-accent rounded-full animate-pulse" style={{
+      animationDelay: '1s'
+    }}></div>
+      <div className="absolute bottom-32 left-20 w-1.5 h-1.5 bg-primary rounded-full animate-pulse" style={{
+      animationDelay: '2s'
+    }}></div>
+      <div className="absolute bottom-20 right-10 w-1 h-1 bg-accent rounded-full animate-pulse" style={{
+      animationDelay: '0.5s'
+    }}></div>
+    </section>;
 };
-
 export default HeroSection;
