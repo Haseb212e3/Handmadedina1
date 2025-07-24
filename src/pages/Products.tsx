@@ -9,6 +9,11 @@ const Products = () => {
     {
       id: 1,
       name: { al: 'Batanije me buqetë trëndafilash', en: 'Blanket with Rose Bouquet', de: 'Decke mit Rosenstrauß' },
+      description: { 
+        al: 'Punuar me dorë gjatë një kohe të gjatë, me kujdes të madh. Trëndafilat nuk vyshken kurrë – sepse janë thurur me dashuri. Madhësia: 65 cm  Ideale si dhuratë për të porsalindur ose dekore.',
+        en: 'Handcrafted over a long time with great care. The roses never wilt – because they are crocheted with love. Size: 65 cm  Ideal as a gift for newborns or decoration.',
+        de: 'Handgefertigt über eine lange Zeit mit großer Sorgfalt. Die Rosen verwelken nie – weil sie mit Liebe gehäkelt sind. Größe: 65 cm  Ideal als Geschenk für Neugeborene oder Dekoration.'
+      },
       price: '25€',
       image: '/lovable-uploads/5886189c-e3e5-42b3-9895-821a6ea2345a.png'
     },
@@ -82,6 +87,12 @@ const Products = () => {
                 <h3 className="text-xl font-bold text-foreground mb-2 text-center">
                   {product.name[currentLang as keyof typeof product.name]}
                 </h3>
+                
+                {product.description && (
+                  <p className="text-sm text-muted-foreground mb-3 text-center px-2">
+                    {product.description[currentLang as keyof typeof product.description]}
+                  </p>
+                )}
                 
                 <p className="text-accent text-lg font-bold text-center mb-4">
                   {product.price}
