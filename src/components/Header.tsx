@@ -59,7 +59,7 @@ const Header = () => {
 
         {/* Logo - Center */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <h1 className="text-2xl font-bold tracking-wider text-center text-slate-300 md:text-lg">
+          <h1 className="font-bold tracking-wider text-center text-slate-300 md:text-lg text-xs">
             HANDMADE <span className="text-accent">♡</span> DINA
           </h1>
         </div>
