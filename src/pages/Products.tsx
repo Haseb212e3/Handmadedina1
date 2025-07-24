@@ -15,7 +15,7 @@ const Products = () => {
         de: 'Handgefertigt über eine lange Zeit mit großer Sorgfalt. Die Rosen verwelken nie – weil sie mit Liebe gehäkelt sind. Größe: 65 cm  Ideal als Geschenk für Neugeborene oder Dekoration.'
       },
       price: '100€',
-      image: '/lovable-uploads/5886189c-e3e5-42b3-9895-821a6ea2345a.png'
+      image: '/lovable-uploads/rose-blanket.jpeg'
     },
     {
       id: 2,
@@ -80,7 +80,7 @@ const Products = () => {
                   <img
                     src={product.image}
                     alt={product.name[currentLang as keyof typeof product.name]}
-                    className="w-full h-40 object-contain rounded-lg"
+                    className="w-full h-32 object-contain rounded-lg"
                   />
                 </div>
                 
