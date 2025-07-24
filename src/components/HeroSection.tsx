@@ -27,7 +27,7 @@ const HeroSection = () => {
       {/* Main content */}
       <div className="relative z-20 flex flex-col items-center max-w-4xl mx-auto">
         {/* Title */}
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-12 md:mb-16 text-center tracking-wider">
+        <h2 className="text-4xl lg:text-7xl font-bold text-foreground mb-12 md:mb-16 text-center tracking-wider md:text-5xl">
           {content[currentLang as keyof typeof content].title}
         </h2>
 
