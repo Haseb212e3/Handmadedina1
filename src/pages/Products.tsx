@@ -75,7 +75,7 @@ const Products = () => {
                   <img
                     src={product.image}
                     alt={product.name[currentLang as keyof typeof product.name]}
-                    className="w-full h-48 object-cover rounded-lg"
+                    className="w-full h-40 object-contain rounded-lg"
                   />
                 </div>
                 
