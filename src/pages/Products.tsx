@@ -14,7 +14,7 @@ const Products = () => {
         en: 'Handcrafted over a long time with great care. The roses never wilt – because they are crocheted with love. Size: 65 cm  Ideal as a gift for newborns or decoration.',
         de: 'Handgefertigt über eine lange Zeit mit großer Sorgfalt. Die Rosen verwelken nie – weil sie mit Liebe gehäkelt sind. Größe: 65 cm  Ideal als Geschenk für Neugeborene oder Dekoration.'
       },
-      price: '25€',
+      price: '100€',
       image: '/lovable-uploads/5886189c-e3e5-42b3-9895-821a6ea2345a.png'
     },
     {
