@@ -8,7 +8,7 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: { al: 'Kukulla Rozë', en: 'Pink Doll', de: 'Rosa Puppe' },
+      name: { al: 'Batanije me buqetë trëndafilash', en: 'Blanket with Rose Bouquet', de: 'Decke mit Rosenstrauß' },
       price: '25€',
       image: '/lovable-uploads/5886189c-e3e5-42b3-9895-821a6ea2345a.png'
     },
